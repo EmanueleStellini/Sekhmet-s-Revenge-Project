@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+  <asset><contributor><author></author><authoring_tool>FBX COLLADA exporter</authoring_tool><comments></comments></contributor><created>2019-02-05T17:01:51Z</created><keywords></keywords><modified>2019-02-05T17:01:51Z</modified><revision></revision><subject></subject><title></title><unit meter="0.010000" name="centimeter"></unit><up_axis>Y_UP</up_axis></asset>
+  <library_images>
+    <image id="file5-image" name="file5"><init_from>file://C:/Users/utente/Desktop/Maya/Texture/yellow wall/Bloc COLOR default.png</init_from></image>
+  </library_images>
+  <library_materials>
+    <material id="lambert10" name="lambert10">
+      <instance_effect url="#lambert10-fx"/>
+    </material>
+  </library_materials>
+  <library_effects>
+    <effect id="lambert10-fx" name="lambert10">
+      <profile_COMMON>
+        <technique sid="standard">
+          <lambert>
+            <emission>
+              <color sid="emission">0.000000  0.000000 0.000000 1.000000</color>
+            </emission>
+            <ambient>
+              <color sid="ambient">0.000000  0.000000 0.000000 1.000000</color>
+            </ambient>
+            <diffuse>
+              <texture texture="file5-image" texcoord="CHANNEL0">
+                <extra>
+                  <technique profile="MAYA">
+                    <wrapU sid="wrapU0">TRUE</wrapU>
+                    <wrapV sid="wrapV0">TRUE</wrapV>
+                    <blend_mode>NONE</blend_mode>
+                  </technique>
+                </extra>
+              </texture>
+            </diffuse>
+            <transparent opaque="RGB_ZERO">
+              <color sid="transparent">0.000000  0.000000 0.000000 1.000000</color>
+            </transparent>
+            <transparency>
+              <float sid="transparency">1.000000</float>
+            </transparency>
+          </lambert>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_geometries>
+    <geometry id="pCube7-lib" name="pCube7Mesh">
+      <mesh>
+        <source id="pCube7-POSITION">
+          <float_array id="pCube7-POSITION-array" count="24">
+-0.500000 -0.500000 0.500000
+0.500000 -0.500000 0.500000
+-0.500000 0.500000 0.500000
+0.500000 0.500000 0.500000
+-0.500000 0.500000 -0.500000
+0.500000 0.500000 -0.500000
+-0.500000 -0.500000 -0.500000
+0.500000 -0.500000 -0.500000
+</float_array>
+          <technique_common>
+            <accessor source="#pCube7-POSITION-array" count="8" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="pCube7-Normal0">
+          <float_array id="pCube7-Normal0-array" count="108">
+0.000000 0.000000 1.000000
+0.000000 0.000000 1.000000
+0.000000 0.000000 1.000000
+0.000000 0.000000 1.000000
+0.000000 0.000000 1.000000
+0.000000 0.000000 1.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 0.000000 -1.000000
+0.000000 0.000000 -1.000000
+0.000000 0.000000 -1.000000
+0.000000 0.000000 -1.000000
+0.000000 0.000000 -1.000000
+0.000000 0.000000 -1.000000
+0.000000 -1.000000 0.000000
+0.000000 -1.000000 0.000000
+0.000000 -1.000000 0.000000
+0.000000 -1.000000 0.000000
+0.000000 -1.000000 0.000000
+0.000000 -1.000000 0.000000
+1.000000 0.000000 0.000000
+1.000000 0.000000 0.000000
+1.000000 0.000000 0.000000
+1.000000 0.000000 0.000000
+1.000000 0.000000 0.000000
+1.000000 0.000000 0.000000
+-1.000000 0.000000 0.000000
+-1.000000 0.000000 0.000000
+-1.000000 0.000000 0.000000
+-1.000000 0.000000 0.000000
+-1.000000 0.000000 0.000000
+-1.000000 0.000000 0.000000
+</float_array>
+          <technique_common>
+            <accessor source="#pCube7-Normal0-array" count="36" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="pCube7-UV0">
+          <float_array id="pCube7-UV0-array" count="48">
+0.125042 0.937431
+0.312673 0.874923
+0.748698 0.375666
+0.001059 0.749642
+0.000510 0.812669
+0.501309 0.499523
+0.187498 0.749958
+0.126068 0.874558
+0.188012 0.811855
+0.313652 0.811877
+0.125452 0.687408
+0.125721 0.749610
+0.000340 0.937151
+0.000339 0.999443
+0.501814 0.374684
+0.125741 0.812405
+0.187691 0.936861
+0.748996 0.498651
+0.000812 0.687591
+0.312613 0.937239
+0.187770 0.875069
+0.125126 0.999324
+0.000873 0.875156
+0.313228 0.749901
+</float_array>
+          <technique_common>
+            <accessor source="#pCube7-UV0-array" count="24" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="pCube7-VERTEX">
+          <input semantic="POSITION" source="#pCube7-POSITION"/>
+        </vertices>
+        <triangles count="12" material="lambert10"><input semantic="VERTEX" offset="0" source="#pCube7-VERTEX"/><input semantic="NORMAL" offset="1" source="#pCube7-Normal0"/><input semantic="TEXCOORD" offset="2" set="0" source="#pCube7-UV0"/><p> 3 0 19 2 1 16 0 2 20 3 3 19 0 4 20 1 5 1 3 6 17 5 7 5 2 8 2 2 9 2 5 10 5 4 11 14 7 12 7 6 13 22 4 14 4 7 15 7 4 16 4 5 17 15 1 18 9 0 19 8 6 20 6 1 21 9 6 22 6 7 23 23 3 24 3 1 25 18 5 26 11 1 27 18 7 28 10 5 29 11 2 30 21 6 31 12 0 32 0 6 33 12 2 34 21 4 35 13</p></triangles>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_visual_scenes>
+    <visual_scene id="Brick_2" name="Brick_2">
+      <node name="pCube7" id="pCube7" sid="pCube7"><matrix sid="matrix">0.500000 0.000000 0.000000 2.416140 0.000000 1.000000 0.000000 4.448227 0.000000 0.000000 1.000000 0.304949 0.000000 0.000000 0.000000 1.000000</matrix><instance_geometry url="#pCube7-lib"><bind_material><technique_common><instance_material symbol="lambert10" target="#lambert10"/></technique_common></bind_material></instance_geometry><extra><technique profile="FCOLLADA"><visibility>1.000000</visibility></technique></extra></node>
+      <extra><technique profile="MAX3D"><frame_rate>24.000000</frame_rate></technique><technique profile="FCOLLADA"><start_time>0.041667</start_time><end_time>8.333333</end_time></technique></extra>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#Brick_2"></instance_visual_scene>
+  </scene>
+</COLLADA>
