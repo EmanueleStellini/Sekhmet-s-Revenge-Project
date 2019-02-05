@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+  <asset><contributor><author></author><authoring_tool>FBX COLLADA exporter</authoring_tool><comments></comments></contributor><created>2019-02-03T15:46:04Z</created><keywords></keywords><modified>2019-02-03T15:46:04Z</modified><revision></revision><subject></subject><title></title><unit meter="0.010000" name="centimeter"></unit><up_axis>Y_UP</up_axis></asset>
+  <library_images>
+    <image id="file1-image" name="file1"><init_from>file://C:/Users/utente/Desktop/Maya/Texture/yellow wall/Bloc COLOR.png</init_from></image>
+  </library_images>
+  <library_materials>
+    <material id="lambert2" name="lambert2">
+      <instance_effect url="#lambert2-fx"/>
+    </material>
+  </library_materials>
+  <library_effects>
+    <effect id="lambert2-fx" name="lambert2">
+      <profile_COMMON>
+        <technique sid="standard">
+          <lambert>
+            <emission>
+              <color sid="emission">0.000000  0.000000 0.000000 1.000000</color>
+            </emission>
+            <ambient>
+              <color sid="ambient">0.000000  0.000000 0.000000 1.000000</color>
+            </ambient>
+            <diffuse>
+              <texture texture="file1-image" texcoord="CHANNEL0">
+                <extra>
+                  <technique profile="MAYA">
+                    <wrapU sid="wrapU0">TRUE</wrapU>
+                    <wrapV sid="wrapV0">TRUE</wrapV>
+                    <blend_mode>NONE</blend_mode>
+                  </technique>
+                </extra>
+              </texture>
+            </diffuse>
+            <transparent opaque="RGB_ZERO">
+              <texture texture="file1-image" texcoord="CHANNEL0">
+                <extra>
+                  <technique profile="MAYA">
+                    <wrapU sid="wrapU0">TRUE</wrapU>
+                    <wrapV sid="wrapV0">TRUE</wrapV>
+                    <blend_mode>NONE</blend_mode>
+                  </technique>
+                </extra>
+              </texture>
+            </transparent>
+            <transparency>
+              <float sid="transparency">1.000000</float>
+            </transparency>
+          </lambert>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_geometries>
+    <geometry id="pCube13-lib" name="pCube13Mesh">
+      <mesh>
+        <source id="pCube13-POSITION">
+          <float_array id="pCube13-POSITION-array" count="78">
+-0.500000 -0.500000 0.499999
+0.500000 -0.500000 0.499999
+-0.500000 0.500000 0.499999
+0.500000 0.500000 0.499999
+-0.500000 -0.500000 -0.500001
+0.500000 -0.500000 -0.500001
+-0.001880 0.500000 1.091032
+-0.001880 -0.500000 1.091032
+-0.001880 -0.500000 -0.500001
+-0.254774 0.500000 1.017201
+-0.254774 -0.500000 1.017201
+-0.254774 -0.500000 -0.500001
+0.250116 0.500000 1.017201
+0.250116 -0.500000 1.017201
+0.250116 -0.500000 -0.500001
+-0.427149 0.500000 0.842905
+-0.427149 -0.500000 0.842905
+-0.378029 -0.500000 -0.500001
+0.421623 0.500000 0.847939
+0.421623 -0.500000 0.847939
+0.372503 -0.500000 -0.500001
+-0.416866 -0.500000 0.499999
+-0.254774 -0.500000 0.500000
+-0.001880 -0.500000 0.500000
+0.250116 -0.500000 0.500000
+0.411186 -0.500000 0.500000
+</float_array>
+          <technique_common>
+            <accessor source="#pCube13-POSITION-array" count="26" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="pCube13-Normal0">
+          <float_array id="pCube13-Normal0-array" count="306">
+0.903578 0.000000 -0.428424
+0.903578 0.000000 -0.428424
+0.978168 0.000000 -0.207816
+0.903578 0.000000 -0.428424
+0.978168 0.000000 -0.207816
+0.978168 0.000000 -0.207816
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+-0.497823 0.000000 -0.867279
+-0.497823 0.000000 -0.867279
+0.000000 0.000000 -1.000000
+0.000000 0.000000 -1.000000
+0.000000 0.000000 -1.000000
+-0.497823 0.000000 -0.867279
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 0.000000 -1.000000
+0.000000 0.000000 -1.000000
+0.503952 0.000000 -0.863732
+0.503952 0.000000 -0.863732
+0.503952 0.000000 -0.863732
+0.000000 0.000000 -1.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+-0.900415 0.000000 -0.435032
+-0.900415 0.000000 -0.435032
+-0.497823 0.000000 -0.867279
+-0.497823 0.000000 -0.867279
+-0.497823 0.000000 -0.867279
+-0.900415 0.000000 -0.435032
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.503952 0.000000 -0.863732
+0.503952 0.000000 -0.863732
+0.903578 0.000000 -0.428424
+0.503952 0.000000 -0.863732
+0.903578 0.000000 -0.428424
+0.903578 0.000000 -0.428424
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+-0.975555 0.000000 -0.219754
+-0.900415 0.000000 -0.435032
+-0.900415 0.000000 -0.435032
+-0.900415 0.000000 -0.435032
+-0.975555 0.000000 -0.219754
+-0.975555 0.000000 -0.219754
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+</float_array>
+          <technique_common>
+            <accessor source="#pCube13-Normal0-array" count="102" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="pCube13-UV0">
+          <float_array id="pCube13-UV0-array" count="80">
+0.999771 0.000182
+0.999798 0.499849
+0.955296 0.000733
+0.944840 0.499823
+0.499721 0.500297
+0.499786 0.999828
+0.000316 0.999753
+0.000322 0.500262
+0.250990 0.999791
+0.996374 0.000745
+0.250961 0.500280
+0.930271 0.000340
+0.338893 0.999810
+0.958624 0.169401
+0.338846 0.500288
+0.756211 0.000613
+0.165205 0.999772
+0.875196 0.000710
+0.165194 0.500271
+0.751264 0.499773
+0.423836 0.999819
+0.873621 0.254061
+0.423779 0.500293
+0.633724 0.499659
+0.079027 0.999762
+0.750204 0.000673
+0.079024 0.500267
+0.639609 0.001130
+0.750178 0.289710
+0.625627 0.000637
+0.627152 0.254044
+0.545986 0.000613
+0.542567 0.171797
+0.502067 0.000600
+0.873234 0.000526
+0.869228 0.500017
+0.558598 0.499579
+0.582980 0.000509
+0.500173 0.499764
+0.500170 0.000177
+</float_array>
+          <technique_common>
+            <accessor source="#pCube13-UV0-array" count="40" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="pCube13-VERTEX">
+          <input semantic="POSITION" source="#pCube13-POSITION"/>
+        </vertices>
+        <triangles count="34" material="lambert2"><input semantic="VERTEX" offset="0" source="#pCube13-VERTEX"/><input semantic="NORMAL" offset="1" source="#pCube13-Normal0"/><input semantic="TEXCOORD" offset="2" set="0" source="#pCube13-UV0"/><p> 15 0 20 16 1 22 0 2 4 15 3 20 0 4 4 2 5 5 21 6 3 4 7 0 0 8 1 4 9 0 21 10 3 17 11 11 12 12 16 13 13 18 7 14 10 7 15 10 6 16 8 12 17 16 23 18 19 14 19 27 8 20 15 14 21 27 23 22 19 24 23 23 6 24 8 7 25 10 10 26 14 10 27 14 9 28 12 6 29 8 23 30 19 11 31 34 22 32 35 11 33 34 23 34 19 8 35 15 18 36 24 19 37 26 13 38 18 13 39 18 12 40 16 18 41 24 24 42 23 20 43 37 14 44 27 20 45 37 24 46 23 25 47 36 9 48 12 10 49 14 16 50 22 9 51 12 16 52 22 15 53 20 22 54 35 17 55 11 21 56 3 17 57 11 22 58 35 11 59 34 3 60 6 19 61 26 18 62 24 19 63 26 3 64 6 1 65 7 5 66 39 25 67 36 1 68 38 25 69 36 5 70 39 20 71 37 21 72 2 0 73 9 16 74 13 10 75 21 22 76 17 16 77 13 16 78 13 22 79 17 21 80 2 7 81 28 23 82 25 10 83 21 10 84 21 23 85 25 22 86 17 13 87 30 23 88 25 7 89 28 23 90 25 13 91 30 24 92 29 24 93 29 19 94 32 25 95 31 19 96 32 24 97 29 13 98 30 1 99 33 25 100 31 19 101 32</p></triangles>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_visual_scenes>
+    <visual_scene id="Bloc_15" name="Bloc_15">
+      <node name="pCube13" id="pCube13" sid="pCube13"><matrix sid="matrix">0.000000 0.000000 3.000000 -8.372832 0.000000 3.000000 0.000000 2.000000 -3.000000 0.000000 0.000000 10.011605 0.000000 0.000000 0.000000 1.000000</matrix><instance_geometry url="#pCube13-lib"><bind_material><technique_common><instance_material symbol="lambert2" target="#lambert2"/></technique_common></bind_material></instance_geometry><extra><technique profile="FCOLLADA"><visibility>1.000000</visibility></technique></extra></node>
+      <extra><technique profile="MAX3D"><frame_rate>24.000000</frame_rate></technique><technique profile="FCOLLADA"><start_time>0.041667</start_time><end_time>8.333333</end_time></technique></extra>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#Bloc_15"></instance_visual_scene>
+  </scene>
+</COLLADA>
