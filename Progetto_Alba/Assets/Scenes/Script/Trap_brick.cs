@@ -5,9 +5,14 @@ using UnityEngine;
 public class Trap_brick : MonoBehaviour {
 
     private GameObject[] bricks;
+    private GameObject brickSonor;
     private Rigidbody fisic;
     private GameObject character;
     private Collider characterCollider;
+    private AudioSource audioTrap;
+    public AudioClip clip;
+    private bool alreadyplayed = false;
+
 
     public string boh = "669";
 
@@ -18,6 +23,10 @@ public class Trap_brick : MonoBehaviour {
         characterCollider = character.GetComponent<Collider>();
 
         bricks = GameObject.FindGameObjectsWithTag("Brick");
+        brickSonor = GameObject.Find("BrickSonor");
+        audioTrap = brickSonor.GetComponent<AudioSource>();
+
+        
 
     }
 	
@@ -35,6 +44,12 @@ public class Trap_brick : MonoBehaviour {
                 fisic = bricks[i].GetComponent<Rigidbody>();
                 fisic.useGravity = true;
             }
+            if(alreadyplayed == false)
+            {
+                audioTrap.PlayOneShot(clip, 1);
+                alreadyplayed = true;
+            }         
+            
         }
         
     }
