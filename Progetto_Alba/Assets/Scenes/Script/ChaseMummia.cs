@@ -19,29 +19,22 @@ public class ChaseMummia : MonoBehaviour {
         Vector3 direction = player.position - this.transform.position;
         float angle = Vector3.Angle(direction, this.transform.forward);
 
-        if (Vector3.Distance(player.position, this.transform.position)<10 && angle <= 180)
+        if (Vector3.Distance(player.position, this.transform.position)<7 && angle <= 30)
         {
             direction.y = 0.0f;
             this.transform.rotation = Quaternion.Slerp(this.transform.rotation, Quaternion.LookRotation(direction), 0.1f);
 
             anim.SetBool("isIdle", false); 
-            if (direction.magnitude > 3)
+            if (direction.magnitude > 1.5)
             {
-                this.transform.Translate(0, 0, 0.03f);
+                this.transform.Translate(0, 0, 0.01f);
                 anim.SetBool("isWalking", true);
                 anim.SetBool("isAttacking", false);
             }
             else
             {
-                if(direction.magnitude < 2)
-                {
-                    anim.SetBool("isNeckbite", true);
-                    anim.SetBool("isAttacking", false);
-                    anim.SetBool("isWalking", false);
-                }
                 anim.SetBool("isAttacking", true);
                 anim.SetBool("isWalking",false);
-                anim.SetBool("isNeckbite", false);
             }
 
         }
@@ -50,7 +43,6 @@ public class ChaseMummia : MonoBehaviour {
             anim.SetBool("isIdle", true);
             anim.SetBool("isWalking", false);
             anim.SetBool("isAttacking", false);
-            anim.SetBool("isNeckbite", false);
         }
 
 	}
